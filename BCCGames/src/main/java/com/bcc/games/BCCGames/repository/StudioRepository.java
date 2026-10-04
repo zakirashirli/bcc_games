@@ -1,6 +1,6 @@
 package com.bcc.games.BCCGames.repository;
 
-import com.bcc.games.BCCGames.entity.Studio;
+import com.bcc.games.BCCGames.model.entity.Studio;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

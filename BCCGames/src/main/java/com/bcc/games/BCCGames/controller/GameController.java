@@ -1,19 +1,19 @@
 package com.bcc.games.BCCGames.controller;
 
-import com.bcc.games.BCCGames.entity.Game;
+import com.bcc.games.BCCGames.model.dto.GameRequest;
+import com.bcc.games.BCCGames.model.dto.GameResponse;
+import com.bcc.games.BCCGames.model.entity.Game;
 import com.bcc.games.BCCGames.service.GameService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RequiredArgsConstructor
 @RestController
 public class GameController {
 
     private final GameService gameService;
-
-    public GameController(GameService gameService) {
-        this.gameService = gameService;
-    }
 
     @GetMapping("/games")
     public List<Game> getAll() {
@@ -21,8 +21,8 @@ public class GameController {
     }
 
     @PostMapping("/games")
-    public Game getAll(@RequestBody Game game) {
-        return gameService.createGame(game);
+    public GameResponse getAll(@RequestBody GameRequest gameRequest) {
+        return gameService.createGame(gameRequest);
     }
 
     @DeleteMapping("/games/delete/{id}")
