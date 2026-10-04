@@ -1,7 +1,7 @@
 package com.bcc.games.BCCGames.service;
 
-import com.bcc.games.BCCGames.model.dto.GameRequest;
-import com.bcc.games.BCCGames.model.dto.GameResponse;
+import com.bcc.games.BCCGames.model.dto.game.GameRequest;
+import com.bcc.games.BCCGames.model.dto.game.GameResponse;
 import com.bcc.games.BCCGames.model.entity.Game;
 import com.bcc.games.BCCGames.model.entity.Studio;
 import com.bcc.games.BCCGames.repository.GameRepository;

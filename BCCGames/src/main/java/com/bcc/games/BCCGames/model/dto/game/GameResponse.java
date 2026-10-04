@@ -1,4 +1,4 @@
-package com.bcc.games.BCCGames.model.dto;
+package com.bcc.games.BCCGames.model.dto.game;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
